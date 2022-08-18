@@ -1,0 +1,38 @@
+
+ .scales {
+    height: 17rem;
+    margin-right: 8.5rem;
+}
+
+.stadiometer {
+    height: 17rem;
+    margin-left: 9rem;
+} 
+
+@keyframes disappear {
+    90% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.image-disappear {
+    position: relative;
+    z-index: -1;
+    animation-name: disappear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.scales-disappear {
+    animation-delay: 1.8s;
+
+}
+
+.stadiometer-disappear {
+    animation-delay: 4.8s;
+
+}
+
