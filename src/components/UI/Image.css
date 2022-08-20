@@ -19,19 +19,24 @@
 }
 
 .image-disappear {
-    position: relative;
-    z-index: -1;
-    animation-name: disappear;
+    position: relative; 
+     animation-name: disappear;
     animation-duration: 1s;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards 
 }
 
 .scales-disappear {
+    animation-name: disappear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     animation-delay: 1.8s;
 
 }
 
 .stadiometer-disappear {
+    animation-name: disappear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     animation-delay: 4.8s;
 
 }

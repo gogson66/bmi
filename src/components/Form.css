@@ -1,4 +1,7 @@
 .form {
+    position: relative;
+    width: 100%;
+    height: 100%;
     margin-top: 0.8rem;
     display: flex;
     align-items: center;
@@ -8,3 +11,7 @@
 .go-back-form input {
     display: none;
 }
+
+.back {
+    display: none;
+} 

@@ -1,4 +1,6 @@
 input {
+    position: relative;
+    z-index: 3;
     border: 2px solid grey;
     margin: 1rem;
     border-radius: 10px;
@@ -6,6 +8,7 @@ input {
     height: 80px;
     font-size: 50px;
 }
+
 
 @keyframes animation-weight {
 
@@ -91,3 +94,4 @@ input {
     animation-fill-mode: forwards;
     animation-delay: 3s;
 }
+

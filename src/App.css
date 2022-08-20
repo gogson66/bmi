@@ -7,5 +7,32 @@
 
 .main {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+/* 
+
+ReactCardFlip
+perspective: 1000px; z-index: auto;
+
+ReactCardFlipper
+height: 100%; position: relative; width: 100%;
+
+ReactCardFront
+backface-visibility: hidden; height: 100%; left: 0px; position: relative; top: 0px; transform: rotateX(0deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%; z-index: 2;
+
+ReactCardBack
+style="backface-visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; transform: rotateX(-180deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%;"
+
+After Fliping
+
+ReactCardFront
+backface-visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; transform: rotateX(180deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%; z-index: 2;
+
+ReactCardBack
+backface-visibility: hidden; height: 100%; left: 0px; position: relative; top: 0px; transform: rotateX(0deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%;
+
+
+*/

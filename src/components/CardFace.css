@@ -1,0 +1,17 @@
+.card-face {
+    margin: auto;
+    margin-top: 1rem;
+    width: 737px;
+    height: 395px;
+    background-color: #DCB190;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2rem;
+  
+  }
+  
+  .card-face--front {
+    display: flex;
+    flex-direction: column;
+  }
+  
