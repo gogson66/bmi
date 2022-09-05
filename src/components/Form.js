@@ -34,7 +34,7 @@ function Form(props) {
       setHeight('')
       setTimeout(() => {
         setEffect(false)
-      }, 500)
+      }, 700)
 
 
       props.onSendData(formData)
@@ -44,20 +44,19 @@ function Form(props) {
     const startEffects = function(e) {
       e.preventDefault()
 
+
       setEffect(true)
       props.onImageDisapear()
 
       // Sending data after animation finishes
       setTimeout(() => {
         sendDataHandler(e)
-      }, 6000)  
+      }, 6000)
     }
 
 
-
-
     return <form className='form' onSubmit={startEffects}>
-      <Input className={effect  && 'effect-weight'} value={weight} max="500" placeholder="Weight in kg" onChange={changeWeightHandler}></Input>
+      <Input className={effect  && `effect-weight`} value={weight} max="500" placeholder="Weight in kg" onChange={changeWeightHandler}></Input>
       <Button type="submit" className="calculate-button">Get BMI</Button>
       <Input  className={effect && 'effect-height'} value={height} max="300" placeholder="Height in cm" onChange={changeHeightHandler}></Input>
     </form>

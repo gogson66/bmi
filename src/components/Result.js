@@ -9,8 +9,10 @@ function Result(props) {
         props.onGoBack()
     }
 
-    return <div className="result">
-        <h1>{bmiIndex}</h1>
+    const classes = `result ${props.className}`
+
+    return <div className={classes}>
+        <h3>{bmiIndex}</h3>
         <p>{description}</p>
         <Button onClick={goBackHandler}>Go Back
         </Button>

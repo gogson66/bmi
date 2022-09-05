@@ -1,0 +1,98 @@
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        display: inline-block;
+    }
+}
+
+
+.introduction {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55vw;
+    min-width: 450px;
+    height: 100vh;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:1.9rem;
+    padding: 5px;
+    background-color: #DCB190;
+    margin: 1rem;
+}
+
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 1rem;
+    bottom: 40px;
+    width: 55vw;
+}
+
+.introduction p {
+    position: absolute;
+    display: none;
+}
+
+.introduction p.active {
+    padding: 2rem;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    animation-name: appear;
+    animation-duration: 1.5s;
+}
+
+.introduction .fa-angle-right,
+.introduction .fa-angle-left {
+    font-size: 96px;
+    cursor: pointer;
+    color: turquoise;
+}
+
+.fa-circle {
+    color: turquoise;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.active {
+    color: rgb(41, 143, 133);
+}
+
+@media (max-width: 480px) {
+    .introduction {
+        order: 2;
+        height: 40%;
+    }
+
+    .introduction .fa-angle-right,
+    .introduction .fa-angle-left,
+    .circles {
+        display: none;
+    }
+
+}
+
+
+ @media (max-width: 1000px) {
+    .introduction {
+        font-size: 1.6rem;
+    }
+ }
+

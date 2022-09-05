@@ -10,8 +10,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFE302	;
+  background-color: #DCB190;
   height: 100vh;
   overflow: hidden;
+  min-width: 850px;
+}
+
+@media (max-width: 480px) {
+  body {
+    min-width: 100vw;
+  }
 }
 

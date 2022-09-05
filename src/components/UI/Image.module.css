@@ -1,12 +1,15 @@
 
  .scales {
-    height: 17rem;
-    margin-right: 8.5rem;
+    height: 10rem;
+    width: 40%;
+    min-width: 20%;
 }
 
 .stadiometer {
-    height: 17rem;
-    margin-left: 9rem;
+    height: 10rem;
+    width: 30%;
+    min-width: 20%;
+
 } 
 
 @keyframes disappear {
@@ -20,7 +23,7 @@
 
 .image-disappear {
     position: relative; 
-     animation-name: disappear;
+    animation-name: disappear;
     animation-duration: 1s;
     animation-fill-mode: forwards 
 }
@@ -40,4 +43,5 @@
     animation-delay: 4.8s;
 
 }
+
 

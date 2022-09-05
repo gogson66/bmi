@@ -1,38 +1,60 @@
-.images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -10px;
-}
-
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    min-width: 100vw;
+    width: 100vw;
 }
 
 
-/* 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-size: 72px;
+    font-family: 'Barlow Condensed';
+    margin-top: 10px;
+    z-index: 100;
+    width: 100vw;
+    min-width: 800px;
+    height: 80px;
+    padding: 10px;
 
-ReactCardFlip
-perspective: 1000px; z-index: auto;
-
-ReactCardFlipper
-height: 100%; position: relative; width: 100%;
-
-ReactCardFront
-backface-visibility: hidden; height: 100%; left: 0px; position: relative; top: 0px; transform: rotateX(0deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%; z-index: 2;
-
-ReactCardBack
-style="backface-visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; transform: rotateX(-180deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%;"
-
-After Fliping
-
-ReactCardFront
-backface-visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; transform: rotateX(180deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%; z-index: 2;
-
-ReactCardBack
-backface-visibility: hidden; height: 100%; left: 0px; position: relative; top: 0px; transform: rotateX(0deg); transform-style: preserve-3d; transition: all 0.6s ease 0s; width: 100%;
+}
 
 
-*/
+
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 480px;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .card-container {
+        order: 1;
+        height: 40%;
+    }
+
+    .title {
+        order: 0;
+        width: 100vw;
+        min-width: 100vw;
+        position: relative;
+        text-align: center;
+        height: 10%;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 60px;
+    }
+}
+
