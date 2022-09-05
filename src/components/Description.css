@@ -59,6 +59,7 @@
 
 .introduction .fa-angle-right,
 .introduction .fa-angle-left {
+    display: block;
     font-size: 96px;
     cursor: pointer;
     color: turquoise;
