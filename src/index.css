@@ -10,8 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #DCB190; */
-  background-color: blue;
+  background-color: #DCB190;
   height: 100vh;
   overflow: hidden;
   min-width: 850px;

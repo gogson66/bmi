@@ -5,6 +5,10 @@ import Image from './UI/Image'
 import Result from './Result'
 import CardFace from './CardFace'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+
+
  
 function Card(props) {
 
@@ -65,7 +69,7 @@ function Card(props) {
 
     return <div className='card-container'>
     <div className='icon-container'>
-      <i className="fa fa-arrow-down"></i>
+      <FontAwesomeIcon icon={faArrowDown} className="fa fa-arrow-down"></FontAwesomeIcon>
     </div>
     <div className="card">
         <div className="flip">
