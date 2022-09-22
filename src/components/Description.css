@@ -24,6 +24,7 @@
     padding: 5px;
     background-color: #DCB190;
     margin: 1rem;
+    pointer-events: none;
 }
 
 
@@ -61,8 +62,12 @@
 .introduction .fa-angle-left {
     display: block;
     font-size: 96px;
-    cursor: pointer;
     color: turquoise;
+}
+
+path {
+    cursor: pointer;
+    pointer-events: all;
 }
 
 .fa-circle {
